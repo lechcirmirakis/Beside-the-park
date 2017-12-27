@@ -201,15 +201,32 @@ body {
   padding: 10px 20px 0 38px;
 }
 
+@media only screen and (max-width:1599px) {
+  .iphone-img {
+    right: 180px;
+}
+}
+
+@media only screen and (max-width:1400px) {
+  .iphone-img {
+    right: 80px;
+}
+}
+
 @media only screen and (max-width:1300px) {
   .container {
     padding: 0 50px;
   }
 }
 
+@media only screen and (width: 1280px) and (height: 800px) {
+  .iphone-img {
+    top: 165px;
+}
+
+}
+
 @media only screen and (max-width: 1199px)  {
-
-
 
   .header {
     min-height: 1px;
@@ -224,6 +241,12 @@ body {
     top: 290px;
 }
 
+.iphone-img {
+    right: 50px;
+    width: 550px;
+    top: 260px;
+}
+
 @media only screen and (max-width: 899px)  {
   .navbar__logo {
   margin-left: 180px;
@@ -231,6 +254,12 @@ body {
 
 .navbar {
   height: 130px;
+}
+
+.iphone-img {
+    right: 20px;
+    width: 450px;
+    top: 375px;
 }
 
 .about_text--top {
@@ -266,6 +295,7 @@ body {
 
   .header-content {
     top: 205px;
+    margin-left: 0;
 }
 
 .heading {
@@ -285,7 +315,7 @@ body {
 }
 
 .header-content__text {
-    width: 370px;
+    width: 335px;
     margin-left: 2px;
     font-size: 20px;
     font-weight: normal;
@@ -301,6 +331,12 @@ body {
       line-height: 28px;
       margin: 0 0 25px 0;
   }
+
+  .iphone-img {
+    right: 40px;
+    width: 378px;
+    top: 305px;
+}
 
 .services {
   padding-bottom: 80px;
@@ -330,10 +366,16 @@ body {
 
 }
 
+@media only screen and (max-width: 699px) {
+  .iphone-img {
+    right: 20px;
+}
+}
+
 @media only screen and (max-width: 599px) {
 
   .container {
-      padding: 0px 15px;
+      padding: 0px 20px;
   }
 
   .navbar {
@@ -355,6 +397,10 @@ body {
 
 .about_text--top {
     width: 100%;
+}
+
+.iphone-img {
+  display: none;
 }
 
 .services__box {
