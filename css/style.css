@@ -57,6 +57,8 @@ body {
   padding-top: 10px;
 }
 
+
+
 .header-content {
   position: absolute;
   top: 458px;
@@ -192,6 +194,50 @@ body {
 .services__link:focus {
   border-bottom: 1px solid #fff;
 }
+
+/* -----------   Animate Classes   -----------------------------------------*/
+
+.animated_3s {
+  animation-duration: 3s;
+  animation-fill-mode: both;
+}
+
+.animated_2s {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+/* ----------------   RESPOSIVE Media Queries   ---------------------------  */
 
 @media only screen and (max-width: 1779px)  {
   .navbar__logo {
@@ -404,8 +450,7 @@ body {
 }
 
 .services__box {
-    padding-bottom: 32px;
+  padding-bottom: 32px;
 }
-
 
 }
