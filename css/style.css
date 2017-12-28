@@ -405,12 +405,6 @@ body {
   }
 }
 
-@media only screen and (width: 1280px) and (height: 800px) {
-  .iphone-img {
-    top: 165px;
-  }
-}
-
 @media only screen and (max-width: 1199px) {
   .header {
     min-height: 1px;
