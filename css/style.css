@@ -399,15 +399,23 @@ body {
   }
 }
 
-@media only screen and (max-width:1300px) {
+@media only screen and (max-width:1300px) and (max-height: 800px) {
   .container {
     padding: 0 50px;
   }
-}
 
-@media only screen and (width: 1280px) and (height: 800px) {
   .iphone-img {
     top: 165px;
+  }
+
+}
+
+@media only screen and (max-width:1300px) and (max-height: 768px) {
+  .container {
+    padding: 0 50px;
+  }
+  .iphone-img {
+    top: 135px;
   }
 }
 
