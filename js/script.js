@@ -1,4 +1,6 @@
-document.addEventListener("DOMContentLoaded", () => {
+$(() => {
+
+  // navbar height reduction
 
   $(window).scroll(() => {
 
@@ -14,13 +16,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   });
 
-    let menuTrig = document.querySelector('.menu-trigger');
-    let menuWrap = document.querySelector('.navbar__fadeIn-menu');
+  // sied menu
 
-    menuTrig.addEventListener('click', (event) => {
+  let menuTrig = document.querySelector('.menu-trigger');
+  let menuWrap = document.querySelector('.navbar__fadeIn-menu');
 
-      menuWrap.classList.toggle('navbar__fadeIn-menu--visible');
-
-    });
-
+  menuTrig.addEventListener('click', (event) => {
+    menuWrap.classList.toggle('navbar__fadeIn-menu--visible');
   });
+
+});
