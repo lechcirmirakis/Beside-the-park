@@ -11,25 +11,39 @@
 
     <!-- Css -->
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-    
+
   </head>
   <body>
 
     <!-- H e a d e r -->
-    <header class="header">
+    <header class="header" id="home">
 
       <div class="navbar animated_2s fadeInDown">
 
           <h1 class="navbar__logo">Beside the park</h1>
-
+          
           <div class="navbar__search-field">
             <img src="images/Web_0001_Search.png" alt="Search Icon">
           </div>
+
+
+
           <div class="navbar__menu">
-            <img src="images/Web_0000_Menu.png" alt="Menu Icon">
-
+            <img class="menu-trigger" src="images/Web_0000_Menu.png" alt="Menu Icon">
           </div>
-
+          <div class="navbar__fadeIn-menu">
+            <ul>
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#about">About us</a>
+              </li>
+              <li>
+                <a href="#services">Services</a>
+              </li>
+            </ul>
+          </div>
       </div>
 
       <div class="container">
@@ -42,7 +56,7 @@
     </header>
 
     <!-- Section About -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
           <h2 class="heading heading--about">Lorem impsum</h2>
           <p class="about__text about_text--top">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
@@ -59,7 +73,7 @@
           </div>
       </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
       <div class="container">
         <div class="services-content">
           <div class="row">
@@ -91,5 +105,7 @@
 
       </div>
     </section>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
