@@ -10,20 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
       $('.navbar__fadeIn-menu').css({
         'top': '100px',
       });
-
-    } else {
-      $('.navbar').css({
-        'height': '140px',
-      });
-
-      $('.navbar__fadeIn-menu').css({
-        'top': '140px',
-      });
-
     }
+
   });
-
-
 
     let menuTrig = document.querySelector('.menu-trigger');
     let menuWrap = document.querySelector('.navbar__fadeIn-menu');
