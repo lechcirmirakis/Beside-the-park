@@ -145,24 +145,18 @@ body {
   flex-basis: 82%;
   color: #9bc651;
   font-size: 40px;
-  margin-left: 300px;
+  margin-left: 160px;
 }
 
 .navbar__search-field {
-  -ms-flex-preferred-size: 9%;
-  flex-basis: 9%;
-  padding: 10px 0 0 38px;
+  position: relative;
+  right: 65px;
+  margin-top: 10px;
   cursor: pointer;
 }
 
 .navbar__menu {
-  -ms-flex-preferred-size: 9%;
-  flex-basis: 9%;
-  margin-right: 32px;
-  padding-top: 10px;
-}
-
-.menu-trigger {
+  margin: 10px 0 0 10px;
   cursor: pointer;
 }
 
@@ -378,22 +372,23 @@ body {
 
 /* ----------------   RESPOSIVE Media Queries   ---------------------------  */
 
-@media only screen and (max-width: 1779px) {
-  .navbar__logo {
-    margin-left: 220px;
-  }
-  .navbar__search-field {
-    padding: 10px 20px 0 38px;
-  }
+@media only screen and (max-width:1599px) {
+
+  .navbar__menu {
+    margin: 10px 50px 0 10px;
 }
 
-@media only screen and (max-width:1599px) {
   .iphone-img {
     right: 180px;
   }
 }
 
 @media only screen and (max-width:1400px) {
+
+  .navbar__logo {
+  margin-left: 135px;
+  }
+
   .iphone-img {
     right: 80px;
   }
@@ -410,9 +405,6 @@ body {
     min-height: 1px;
     height: 768px;
   }
-  .navbar__logo {
-    margin-left: 200px;
-  }
   .header-content {
     top: 290px;
   }
@@ -424,20 +416,27 @@ body {
 }
 
 @media only screen and (max-width: 899px) {
-  .navbar__logo {
-    margin-left: 180px;
-  }
   .navbar {
     height: 130px;
   }
+  .navbar__search-field {
+    right: 45px;
+}
   .iphone-img {
     right: 20px;
     width: 450px;
     top: 375px;
   }
+
   .about_text--top {
     width: 100%;
     padding-right: 0px;
+  }
+  .navbar__fadeIn-menu {
+    top: 130px;
+}
+  .navbar__logo {
+  margin-left: 115px;
   }
   .services__box {
     padding-left: 20px;
@@ -454,7 +453,7 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .navbar__search-field, .navbar__menu {
+  .navbar__search-field, .navbar__menu, .navbar__fadeIn-menu {
     display: none;
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
