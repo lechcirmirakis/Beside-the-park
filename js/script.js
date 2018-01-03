@@ -2,6 +2,17 @@ $(() => {
 
   // navbar height reduction
 
+  window.setTimeout(() => {
+    let mainContent = document.querySelector('.c-main-content');
+    let iphon = document.querySelector('.js-iphone-img');
+    iphon.classList.add('animated_1-5s');
+    iphon.classList.add('fadeInRightBig');
+    mainContent.classList.add('animated_2s');
+    mainContent.classList.add('fadeIn');
+
+  }, 1000);
+
+
   $(window).scroll(() => {
 
     if ($(window).scrollTop() > 80) {
@@ -15,16 +26,6 @@ $(() => {
     }
 
   });
-
-  window.setTimeout(() => {
-    let mainContent = document.querySelector('.c-main-content');
-    let iphon = document.querySelector('.js-iphone-img');
-    mainContent.classList.add('animated_2s');
-    mainContent.classList.add('fadeIn');
-    iphon.classList.add('animated_2s');
-    iphon.classList.add('fadeIn');
-
-  }, 1500);
 
   // side menu
 

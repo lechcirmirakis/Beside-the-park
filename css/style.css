@@ -291,13 +291,6 @@ header {
 
 /* -----------   Animate Classes   -----------------------------------------*/
 
-.animated_3s {
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
 .animated_2s {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
@@ -305,16 +298,53 @@ header {
   animation-fill-mode: both;
 }
 
-@-webkit-keyframes fadeInDown {
+.animated_1-5s {
+  -webkit-animation-duration: 1200ms;
+  animation-duration: 1200ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+.fadeInRightBig {
+  -webkit-animation-name: fadeInRightBig;
+  animation-name: fadeInRightBig;
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@keyframes fadeInRightBig {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
+    -webkit-transform: translate3d(2000px, 0, 0);
+            transform: translate3d(2000px, 0, 0);
   }
+
   to {
     opacity: 1;
     -webkit-transform: none;
-    transform: none;
+            transform: none;
+  }
+}
+
+@-webkit-keyframes fadeInRightBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+            transform: translate3d(2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 
@@ -331,17 +361,16 @@ header {
   }
 }
 
-.fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
-}
-
-@-webkit-keyframes fadeIn {
+@-webkit-keyframes fadeInDown {
   from {
     opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
   }
   to {
     opacity: 1;
+    -webkit-transform: none;
+    transform: none;
   }
 }
 
@@ -354,9 +383,13 @@ header {
   }
 }
 
-.fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* ----------------   RESPOSIVE Media Queries   ---------------------------  */
