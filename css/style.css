@@ -146,11 +146,11 @@ header {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 10px;
-  text-decoration: none;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 10px;
+  text-decoration: none;
   height: 100%;
   width: 150px;
   font-size: 20px;
@@ -165,11 +165,10 @@ header {
   color: #000;
 }
 
-
-
 /* Header Content ------------------------ */
 
 .c-main-content {
+  opacity: 0;
   position: absolute;
   top: 458px;
   width: 480px;
@@ -189,7 +188,8 @@ header {
   line-height: 22px;
 }
 
-.o-iphone-img {
+.js-iphone-img {
+  opacity: 0;
   position: absolute;
   right: 287px;
   top: 300px;
@@ -220,7 +220,6 @@ header {
   font-size: 14px;
   line-height: 24px;
 }
-
 
 /* Services section --------------------------------------------------------- */
 
@@ -368,7 +367,7 @@ header {
     margin: 10px 50px 0 10px;
 }
 
-  .o-iphone-img {
+  .js-iphone-img {
     right: 180px;
   }
 }
@@ -379,7 +378,7 @@ header {
   margin-left: 135px;
   }
 
-  .o-iphone-img {
+  .js-iphone-img {
     right: 80px;
   }
 }
@@ -398,7 +397,7 @@ header {
   .c-main-content {
     top: 290px;
   }
-  .o-iphone-img {
+  .js-iphone-img {
     right: 50px;
     width: 550px;
     top: 260px;
@@ -415,7 +414,7 @@ header {
   .c-navbar__search-icon {
     right: 45px;
 }
-  .o-iphone-img {
+  .js-iphone-img {
     right: 20px;
     width: 450px;
     top: 375px;
@@ -484,7 +483,7 @@ header {
     line-height: 28px;
     margin: 0 0 25px 0;
   }
-  .o-iphone-img {
+  .js-iphone-img {
     right: 100px;
     width: 378px;
     top: 300px;
@@ -513,7 +512,7 @@ header {
 }
 
 @media only screen and (max-width: 699px) {
-  .o-iphone-img {
+  .js-iphone-img {
     right: 20px;
   }
 }
@@ -536,7 +535,7 @@ header {
   .c-main-content__text {
     width: 100%;
   }
-  .o-iphone-img {
+  .js-iphone-img {
     display: none;
   }
   .c-services__box {
