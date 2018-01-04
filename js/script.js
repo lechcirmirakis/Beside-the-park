@@ -13,9 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
   // side menu
   let menuTrig = document.querySelector('.js-navbar__menu-icon');
   let menuWrap = document.querySelector('.js-navbar__leftside-menu');
+  let menuLinks = document.querySelectorAll('.js-navbar__link');
 
   menuTrig.addEventListener('click', (event) => {
     menuWrap.classList.toggle('js-leftside-menu--visible');
+    menuLinks.forEach((e) => {
+      e.classList.toggle('animated_1-5s');
+      e.classList.toggle('fadeInUp');
+    });
+
   });
 
 });
