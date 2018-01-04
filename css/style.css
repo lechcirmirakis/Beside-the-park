@@ -240,6 +240,14 @@ header {
   flex-basis: 67%;
   background-color: #43463e;
   padding-top: 65px;
+  -webkit-transition: 700ms;
+  -o-transition: 700ms;
+  transition: 400ms;
+}
+
+.c-services__box:hover {
+  background-color: #000;
+  opacity: 0.5;
 }
 
 .c-services__box--small--green {
