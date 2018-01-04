@@ -273,7 +273,7 @@ header
     min-height: 655px;
 }
 
-.o-row--services
+.o-row--left-margin
 {
     margin-left: 12px;
 }
@@ -725,7 +725,7 @@ header
         padding-top: 50px;
         padding-left: 30px;
     }
-    .o-row--services
+    .o-row--left-margin
     {
         margin-left: 0;
     }
