@@ -353,11 +353,14 @@ header
     text-decoration: none;
 
     color: #fff;
+    transition: 300ms;
+    opacity: 0;
 }
 
 .c-services__link:hover
 {
-    border-bottom: 1px solid #fff;
+    padding-bottom: 1px;
+    border-bottom: 2px solid #fff;
 }
 
 .c-services__link:focus
@@ -601,6 +604,10 @@ header
     .c-services__box
     {
         padding-left: 20px;
+    }
+    .c-services__link
+    {
+        opacity: 1;
     }
 }
 
